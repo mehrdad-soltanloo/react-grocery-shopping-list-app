@@ -1,0 +1,106 @@
+/* index.css */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light grey background */
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: #1c1917;
+  margin-bottom: 3.2rem;
+}
+
+/* Center the main container */
+.container {
+  max-width: 600px; /* Limiting width for better readability */
+  margin: 9.6rem auto; /* Centering the container */
+  padding: 2rem;
+  background: #ffffff; /* White background for card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* ItemForm styles */
+form {
+  display: flex;
+  justify-content: space-between; /* Space between input and button */
+  align-items: center;
+  margin-bottom: 20px; /* Space below form */
+}
+
+input[type="text"] {
+  flex-grow: 1; /* Allow input to grow */
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #6b7280; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Space between input and button */
+  font-size: 1.6rem; /* Slightly larger text */
+}
+input[type="text"]::placeholder {
+  color: #6b7280; /* Grey color for placeholder text */
+  font-style: italic; /* Italicize placeholder text */
+}
+
+button {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  background-color: #16a34a; /* Material Blue */
+  color: white;
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 20px; /* Padding */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.btn-del {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  background-color: #111827; /* Material Blue */
+  color: white;
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 6px 12px; /* Padding */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+.btn-del:hover {
+  background-color: #dc2626;
+}
+
+button:hover {
+  background-color: #22c55e;
+}
+
+/* ItemList styles */
+ul {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+}
+
+li {
+  display: flex; /* Flex for horizontal alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between checkbox and button */
+  padding: 10px 15px; /* Padding for list items */
+  border-bottom: 1px solid #eee; /* Light divider between items */
+  letter-spacing: 1px;
+}
+
+li:last-child {
+  border-bottom: none; /* No border on last item */
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  margin-right: 10px; /* Space between checkbox and text */
+}
